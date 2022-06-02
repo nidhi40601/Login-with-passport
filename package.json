@@ -1,0 +1,31 @@
+{
+  "name": "login-with-passport",
+  "version": "1.0.0",
+  "description": "Login page using Passport",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Passport",
+    "express",
+    "login",
+    "node"
+  ],
+  "author": "Nidhi Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.20.1",
+    "sequelize-cli": "^6.4.1"
+  }
+}
