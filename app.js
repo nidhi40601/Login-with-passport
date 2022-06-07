@@ -8,6 +8,8 @@ const routes = require("./routes/routes")
 require("./config/passport");
 require("dotenv/config");
 
+app.set('view engine', 'ejs');
+
 app.use(express.static('public'));
 
 app.use(express.json());
@@ -29,10 +31,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use((req,res,next) => {
-    console.log(req.session);
-    console.log(req.user);
+    console.log("SESSION:",req.session);
+    console.log("USER:", req.user);
     next();
 })
+
+app.set('view engine', 'ejs');
 
 //Routes
 app.use('/',routes);
